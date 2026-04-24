@@ -57,6 +57,8 @@ h1{font-family:var(--mono);font-size:clamp(2.8rem,6.5vw,5.5rem);font-weight:700;
 .badge-strip-inner{max-width:1100px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;}
 .badge-strip-label{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-right:.5rem;}
 .pill{font-family:var(--mono);font-size:13px;padding:5px 14px;border:1px solid rgba(0,212,170,.28);color:var(--accent);letter-spacing:.04em;white-space:nowrap;}
+.pill-partner{font-family:var(--mono);font-size:14px;padding:6px 16px;border:1px solid rgba(167,139,250,.55);color:#a78bfa;letter-spacing:.04em;white-space:nowrap;font-weight:700;}
+.pill-partner::after{content:'· partner';font-size:11px;letter-spacing:.06em;margin-left:5px;opacity:.75;font-weight:400;}
 
 section{position:relative;z-index:1;padding:6rem 4rem;}
 .section-inner{max-width:1100px;margin:0 auto;}
@@ -153,6 +155,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#modalidad">Modalidad</a></li>
+    <li><a href="#red">Red</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
@@ -179,12 +182,15 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
     <span class="pill">Omron</span>
     <span class="pill">Schneider</span>
     <span class="pill">ABB</span>
-    <span class="pill">SEW</span>
+    <span class="pill">Weidmüller</span>
     <span class="pill">Festo</span>
     <span class="pill">SCADA</span>
     <span class="pill">HMI</span>
     <span class="pill">Variadores</span>
     <span class="pill">Servomotores</span>
+    <span class="pill-partner">SEW</span>
+    <span class="pill-partner">Veichi</span>
+    <span class="pill-partner">Kinco</span>
   </div>
 </div>
 
@@ -208,7 +214,8 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
         <div class="clientes-list" style="margin-bottom:1.2rem;">
           <div class="cliente-item" style="border-color:rgba(0,212,170,0.45);color:var(--text);">Tenaris SIAT <span style="font-family:var(--mono);font-size:9px;margin-left:auto;color:var(--accent);letter-spacing:.08em;">SEMANAL</span></div>
           <div class="cliente-item" style="border-color:rgba(0,212,170,0.45);color:var(--text);">Brimax <span style="font-family:var(--mono);font-size:9px;margin-left:auto;color:var(--accent);letter-spacing:.08em;">SEMANAL</span></div>
-          <div class="cliente-item" style="border-color:rgba(0,212,170,0.45);color:var(--text);">L2 Seguros <span style="font-family:var(--mono);font-size:9px;margin-left:auto;color:var(--muted);letter-spacing:.08em;">EN CURSO</span></div>
+          <div class="cliente-item" style="border-color:rgba(0,212,170,0.45);color:var(--text);">L2 Seguros <span style="font-family:var(--mono);font-size:9px;margin-left:auto;color:#a78bfa;letter-spacing:.08em;">PROYECTO</span></div>
+          <div class="cliente-item" style="border-color:rgba(0,212,170,0.45);color:var(--text);">HG Laboratorio <span style="font-family:var(--mono);font-size:9px;margin-left:auto;color:#a78bfa;letter-spacing:.08em;">PROYECTO</span></div>
         </div>
         <p style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.8rem;">Historial de clientes</p>
         <div class="clientes-list">
@@ -351,6 +358,53 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
         <div class="modal-title">Remoto o presencial</div>
         <p class="modal-desc">Muchos trabajos de programación y soporte pueden hacerse remotamente. Presencial en Rosario y zona.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="red" style="background:var(--bg);">
+  <div class="section-inner">
+    <div class="section-label">// red de trabajo</div>
+    <h2>No trabajo solo</h2>
+    <p class="section-sub">Para proyectos de mayor envergadura o cuando hay simultaneidad, cuento con una red de profesionales y empresas de confianza.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+
+      <div style="padding:2rem;border:1px solid var(--border);background:var(--bg2);border-top:3px solid var(--accent);border-radius:6px;">
+        <div style="font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.8rem;">Automatización industrial</div>
+        <div style="font-family:var(--mono);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.6rem;">Nahuel Ordoñez</div>
+        <p style="font-size:.95rem;color:var(--muted);line-height:1.75;font-weight:300;">Técnico especialista en automatización industrial. Mismo perfil técnico, con quien encaramos proyectos grandes o cubrimos simultaneidad de trabajos.</p>
+        <div style="margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag">PLC / HMI / SCADA</span>
+          <span class="tag">Puesta en marcha</span>
+          <span class="tag">Proyectos simultáneos</span>
+        </div>
+      </div>
+
+      <div style="padding:2rem;border:1px solid var(--border);background:var(--bg2);border-top:3px solid #f97316;border-radius:6px;">
+        <div style="font-family:var(--mono);font-size:10px;color:#f97316;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.8rem;">Automatización · Robótica · Control de movimiento</div>
+        <div style="font-family:var(--mono);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.6rem;"><a href="https://automaticarosario.com.ar/" target="_blank" style="color:var(--text);text-decoration:none;">Automatica Rosario</a></div>
+        <p style="font-size:.95rem;color:var(--muted);line-height:1.75;font-weight:300;">Empresa especializada en automatización avanzada, programación de robots (ABB, Yaskawa, Fanuc, Omron), control de movimiento y retrofitting. Perfil complementario con fuerte orientación mecánica.</p>
+        <div style="margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag">Robots</span>
+          <span class="tag">Servos</span>
+          <span class="tag">Retrofitting</span>
+          <span class="tag">Seguridad funcional</span>
+          <span class="tag">Ingeniería mecánica</span>
+        </div>
+      </div>
+
+      <div style="padding:2rem;border:1px solid var(--border);background:var(--bg2);border-top:3px solid #22c55e;border-radius:6px;">
+        <div style="font-family:var(--mono);font-size:10px;color:#22c55e;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.8rem;">Ingeniería eléctrica civil</div>
+        <div style="font-family:var(--mono);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.6rem;"><a href="https://mei-ingenieria.com.ar/" target="_blank" style="color:var(--text);text-decoration:none;">MEI Ingeniería</a></div>
+        <p style="font-size:.95rem;color:var(--muted);line-height:1.75;font-weight:300;">Empresa que nos deriva proyectos y cubre toda la parte civil-eléctrica: montajes industriales, media tensión, subestaciones transformadoras, migración y provisión de tableros IEC, y proyectos eléctricos integrales.</p>
+        <div style="margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag">Montajes</span>
+          <span class="tag">Media tensión</span>
+          <span class="tag">Tableros IEC</span>
+          <span class="tag">Subestaciones</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
